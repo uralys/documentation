@@ -56,22 +56,23 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Uralys',
+      title: 'Uralys Documentation',
       logo: {
         alt: 'Uralys Logo',
         src: 'img/logo.svg'
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Documentation'
+          type: 'html',
+          position: 'right',
+          value:
+            '<a href="https://open.spotify.com/artist/1lRNAaGXQBBXR6MWs0pEVp" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'https://upload.wikimedia.org/wikipedia/commons/8/84/Spotify_icon.svg\'); background-repeat: no-repeat;  background-size: 24px 24px; display: flex">'
         },
         {
-          href: 'https://github.com/uralys/documentation',
-          label: 'GitHub',
-          position: 'right'
+          type: 'html',
+          position: 'right',
+          value:
+            '<a href="https://github.com/uralys/documentation" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'https://upload.wikimedia.org/wikipedia/commons/9/95/Font_Awesome_5_brands_github.svg\'); background-repeat: no-repeat;  background-size: 24px 24px; display: flex">'
         }
       ]
     },

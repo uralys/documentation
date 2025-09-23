@@ -28,3 +28,16 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.navbar__items--right {
+}
+
+.navbar__item {
+  margin: 4px;
+  padding: 4px;
+
+  &:hover {
+    background-color: rgba(197, 197, 197, 0.799);
+    border-radius: 50%;
+  }
+}
