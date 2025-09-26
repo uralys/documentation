@@ -84,7 +84,7 @@ const config: Config = {
           items: [
             {
               label: 'plop',
-              to: '/docs/intro'
+              to: '/'
             }
           ]
         },

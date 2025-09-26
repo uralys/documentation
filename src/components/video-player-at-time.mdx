@@ -1,7 +1,8 @@
-
-import VideoPlayer from '@site/src/components/video-player';
+---
+title: import this mdx for collapsed Video Player positioned at a specific time
+---
 
 <details>
-  <summary>Watch this part</summary>
-   <VideoPlayer videoId={props.videoId} timeSec={props.timeSec}/>
+  <summary>Watch</summary>
+   <VideoPlayer {...props} />
 </details>
