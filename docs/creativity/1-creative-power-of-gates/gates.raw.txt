@@ -1,0 +1,987 @@
+0:00
+Hello. Today we're going to explore an
+0:02
+effect that might sound a bit boring,
+0:04
+but is often highly overlooked as a
+0:06
+creative tool, the gate. We'll be
+0:08
+looking at the basic idea and controls
+0:10
+of the effect first, and then we're
+0:12
+going to check out a series of creative
+0:14
+applications. Now, what exactly is a
+What is a gate?
+0:16
+gate? Well, in a way, a gate is the
+0:19
+opposite of a compressor. While a
+0:21
+compressor reduces the volume of a
+0:23
+signal that exceeds a certain threshold,
+0:25
+represented by the blue line here, a
+0:27
+gate works the opposite way. it will
+0:29
+reduce or even completely cut out the
+0:32
+signal when it falls below that
+0:33
+threshold level. I personally often use
+0:36
+them when working with vocals to clean
+0:38
+up noise in between phrases. Cuz when a
+0:40
+vocalist records in a less acoustically
+0:43
+controlled environment with a lot of
+0:44
+background noise that might be coming
+0:46
+from the street or an air conditioning
+0:48
+unit, a gate can automatically silence a
+0:51
+background noise or even breaths in
+0:53
+between phrases. iPhone
+0:56
+nita
+1:00
+time zones
+1:03
+limestone
+1:05
+iPhone. Also, when working with drum
+1:08
+recordings, gates are essential to, for
+1:10
+instance, cut out bleed from symbols or
+1:12
+snares in a kick drum mic.
+1:15
+[Music]
+1:29
+But there's a lot of ways to use a gate
+1:31
+creatively, too. So, let's look at the
+1:33
+basic controls first. The threshold is a
+1:36
+key control here. Setting the volume
+1:37
+level a signal must exceed to pass
+1:40
+through the gate.
+1:43
+The floor level determines to which
+1:45
+volume the signal is reduced when the
+1:47
+gate is closed.
+1:56
+When set to minus infinity, the signal
+1:58
+is completely cut out when it's below
+2:00
+the threshold level. There's also a few
+2:03
+timebased controls that you'll find in
+2:05
+pretty much any gate effect. The attack
+2:08
+time controls how quickly the gate opens
+2:10
+after the signal crosses a threshold.
+2:13
+[Music]
+2:23
+After the attack phase, the whole time
+2:25
+kicks in, determining how long the gate
+2:27
+stays open, even if the signal drops
+2:29
+below the threshold level in the
+2:30
+meantime.
+2:34
+[Music]
+2:37
+Once the whole time ends, the release
+2:39
+time controls how long it takes for the
+2:41
+gates to return back to floor level.
+2:46
+[Music]
+2:52
+On the left, we'll find the three last
+2:54
+advanced controls. The look ahead will
+2:56
+introduce a slight delay to the signal,
+2:58
+allowing the gate to respond more
+3:00
+accurately to fast transients. There's
+3:02
+also the flip switch, which lets you
+3:04
+audition the part of the signal that's
+3:06
+being gated out. And the return dial
+3:08
+sets the difference between the
+3:09
+threshold level that opens the gate and
+3:11
+the level that closes it, which can
+3:13
+reduce choppiness in certain cases.
+3:16
+Cool. Now that we've covered the basics,
+3:18
+let's see how we can use the gates
+3:19
+creatively in our music productions.
+Bouncy pad
+3:22
+Okay, so let's kick things off with our
+3:24
+first technique where we'll be using the
+3:26
+gates side chain input to add some
+3:28
+groove and movement to a static pad
+3:31
+sound. Now, for this example, I made a
+3:33
+dusty house groove and added a pad sound
+3:36
+to it, which sounds like this.
+3:42
+[Music]
+3:46
+I really like the chords and the tambber
+3:48
+of this pad, but it feels a bit boring
+3:50
+and disconnected from the drum groove.
+3:52
+To give it a bit more texture and
+3:54
+excitement, I added two parallel
+3:56
+instances of Sound Toy Crystallizer in
+3:58
+an audio effect track. The first layer
+4:01
+creates a grain delay style effect and
+4:03
+is pitched up an octave. While the
+4:05
+second layer does the same thing, but is
+4:07
+pitched up two octaves. To enhance the
+4:09
+stereo width, I panned one layer to the
+4:12
+left and the other one to the right.
+4:17
+Now, let's add some groove using our
+4:19
+gate effect. I'm going to add the gate
+4:21
+to our pad sound channel and open up the
+4:24
+little side chain submen. Now with the
+4:26
+side chain activated, the gate now
+4:28
+listens to the track we send into its
+4:30
+side chain input. Whenever the side
+4:32
+chain signal now crosses the threshold,
+4:34
+the gate opens, allowing the pad sound
+4:36
+to play in rhythm with the track that's
+4:38
+sent into the side chain input. To give
+4:41
+the pad some groove, we're going to need
+4:42
+to send a signal with rhythm and a lot
+4:45
+of sharp transients into the side chain
+4:47
+input. Cuz these transients will trigger
+4:49
+the gate by crossing the threshold. If I
+4:52
+think about transients and groove, I
+4:54
+immediately think of a drum break. So,
+4:56
+let's see which one I found.
+5:04
+The tone of the drum brake doesn't
+5:05
+matter for this technique. We're only
+5:07
+focused on the rhythm of the drum hits
+5:09
+as they'll dictate the groove of our
+5:11
+pad. To enhance the transients even
+5:13
+more, we can play around with the
+5:14
+preserve settings and decrease the
+5:16
+sustain of each drum hit.
+5:23
+[Music]
+5:27
+You want to make sure to mute the drum
+5:28
+break as we're only using it to trigger
+5:30
+the pads gate, not as a part of our
+5:32
+song. Now, let's head back over to the
+5:34
+pad channel where we'll select the drum
+5:36
+brake as the side chain input on our
+5:38
+gates. And let's mess around with the
+5:40
+settings to see if we can come up with
+5:42
+the cool rhythm.
+5:43
+[Music]
+5:48
+By moving around the threshold, we can
+5:50
+control which transients cross it. The
+5:52
+lower the threshold level, the more even
+5:54
+the quieter drum hits will exceed the
+5:56
+threshold level and trigger the pad.
+6:02
+[Music]
+6:05
+A longer release time will make it sound
+6:07
+smoother.
+6:10
+By increasing the floor level, we're
+6:12
+sending back in some of the pad's body.
+6:17
+[Music]
+6:32
+Let's AB the pad with and without the
+6:34
+gate.
+6:37
+[Music]
+6:42
+and paired with the drums.
+6:51
+Now, let's make the pad move along to
+6:53
+the drum groove by side chaining it to
+6:55
+the kick.
+6:57
+[Music]
+7:19
+By automating the release time, we can
+7:21
+make the groove a little more dynamic
+7:23
+and evolve over time.
+7:27
+[Music]
+7:31
+By holding option or alt and dragging,
+7:34
+we can turn a linear line into an
+7:35
+exponential one.
+7:37
+[Music]
+8:18
+Let's delete this modulation and see
+8:20
+what happens when we map an LFO. code to
+8:22
+the release time.
+8:24
+[Music]
+8:37
+Tiny adjustments to the LFO's depth and
+8:40
+offset parameters can have a big impact
+8:42
+on the modulation. So, it's important to
+8:44
+be precise to get the desired effect.
+8:49
+I personally love setting the LFO rate
+8:51
+to a non- integer value for a cool poly
+8:54
+rhythmic groove.
+9:00
+[Music]
+9:06
+You can further adjust the groove by
+9:08
+rearranging the drum brake that's
+9:09
+triggering the pad, allowing you to
+9:11
+experiment with different rhythms and
+9:13
+timings to shape the overall feel.
+9:16
+[Music]
+9:39
+The only thing we're still lacking in
+9:41
+this musical idea is a nice and warm
+9:43
+baseline. So, I've added in some
+9:45
+sustained bass notes to go along with
+9:47
+the chords.
+9:57
+If you don't have speakers or headphones
+9:59
+with good bass response, it can be
+10:01
+helpful to use an EQ to visually check
+10:03
+if you're hitting the octave with the
+10:04
+best subcontent for the notes you're
+10:06
+using. I like using the MIDI pigeon
+10:08
+device to quickly shift the notes an
+10:10
+octave up or down without having to go
+10:12
+into the MIDI clip and doing it
+10:13
+manually.
+10:17
+By shifting the notes down an octave, we
+10:20
+can clearly hear and see that we're
+10:21
+hitting the right frequency range and
+10:23
+getting those warm deep subs that we
+10:25
+want. Next up, I'll add an auto filter
+10:28
+to isolate only the deepest low end of
+10:31
+the sound.
+10:35
+I'll use the MS2 filter type, which is
+10:38
+inspired by the iconic Corg MS-20
+10:40
+filter. And I'll increase the drive to
+10:42
+add some extra fatness and volume.
+10:50
+To give the bass the same rhythm as the
+10:52
+pad, I'll copy over both the modulated
+10:54
+gate and the compressor that side chain
+10:56
+to the kick.
+11:02
+[Music]
+11:06
+Let's see what the bass and the pad
+11:08
+sound like when combined.
+11:16
+It's sounding a little muddy in the low
+11:18
+end, but we can fix this by EQing out
+11:20
+some of the bass from our pad.
+11:28
+[Music]
+11:34
+[Music]
+11:35
+Cool. The bass now grooves perfectly
+11:37
+with the pad. So, let's listen to the
+11:39
+entire loop and hear how it all comes
+11:41
+together.
+11:43
+[Music]
+11:59
+Now, in this case, we're using a drum
+12:01
+break played by an actual person, which
+12:03
+gives us a more organic rhythm. However,
+Stuttering synth
+12:06
+if you're aiming for a more sequenced
+12:08
+robotic groove, you can trigger the
+12:10
+pad's gate with a programmed pattern. To
+12:12
+demonstrate this, I made a quick trappy
+12:15
+idea that sounds like this.
+12:18
+[Music]
+12:29
+For the synth chords, I used a very
+12:31
+basic melt patch, applied some EQing, a
+12:33
+little chorusing, and side chain them to
+12:36
+the kick. But let's group these effects
+12:38
+and get them out of the way. The bass is
+12:41
+an Ableton preset called 808 Drifter
+12:43
+that is being ducked by the kick.
+12:49
+[Music]
+12:51
+Now, let's make the chords move by
+12:53
+adding a gate to the channel and routing
+12:56
+the high hats into its side chain input.
+13:21
+If you'd rather have the gate triggered
+13:22
+by a pattern that isn't audible in the
+13:24
+track, you can duplicate the high hat
+13:27
+track, mute it, and rename it gate
+13:29
+trigger. We'll delete all the notes in
+13:31
+the pattern. If we then head back over
+13:33
+to the core channel and set the gate
+13:35
+side chain input to the gate trigger
+13:37
+track, it will allow us to create a
+13:39
+pattern that controls the rhythm of the
+13:40
+pad without being audible in the mix.
+13:43
+Let's make use of Live's new MIDI
+13:45
+generative tools and have it generate a
+13:47
+pattern for us.
+13:53
+By playing around with the steps,
+13:55
+density, and pattern dials, we can
+13:57
+easily tweak the rhythm to find the
+13:59
+groove that works best for us.
+14:13
+[Music]
+14:26
+Let me quickly show you how I use this
+14:28
+technique to create a choppy baseline in
+14:30
+my track home. Again, by gating the high
+14:33
+end of my bass to a simple 16th note
+14:35
+highhat loop, I created a robotic
+14:38
+rhythmic groove.
+14:41
+[Music]
+14:59
+If you're a fan of these sequenced gate
+15:01
+rhythms, definitely check out Gate Lab,
+15:03
+which is a free plugin by Audio Modern
+15:05
+that comes with a bunch of cool presets
+15:07
+and stereo options.
+Textured drums
+15:10
+Now, there's a couple of cool things we
+15:12
+can do by combining gates and reverbs.
+15:15
+And to demonstrate, I created a dreamy,
+15:17
+spacious lowfi loop using sounds and
+15:20
+loops taken from the golden sample pack
+15:22
+I recently made for Zenheiser, which you
+15:24
+can find on Splice 2, by the way. So,
+15:27
+let's have a listen.
+15:33
+[Music]
+15:52
+It's still a pretty open and rough idea
+15:54
+at this point, but there are a few
+15:55
+things we can do to jazz it up a I've
+15:58
+layered in a field recording of some
+16:00
+crackle, which has a sweet amount of
+16:02
+airy top end to it, which will add nice
+16:04
+texture and perfectly complement the
+16:06
+lowfi character of the drums. Now, let's
+16:09
+use a couple of gate instances to make
+16:11
+the crackle groove in sync with the drum
+16:13
+hits. I'll route the kick to its side
+16:15
+chain input and tweak the controls until
+16:17
+it blends in nicely with the kick.
+16:22
+[Music]
+16:37
+Now, let's do the same thing to the
+16:38
+snare. Just keep in mind that when using
+16:40
+multiple gates on a single channel,
+16:42
+we'll need to set them up in parallel
+16:44
+using an audio effect track. If we stack
+16:46
+them in series, one after the other, the
+16:49
+second gate won't open when the snare
+16:50
+hits because the first gate is silencing
+16:53
+everything in between the kicks.
+17:06
+Now that our snare has some nice crackly
+17:09
+texture to it, let's duplicate the chain
+17:11
+one last time and add some texture to
+17:13
+the high hats. As we're using a very
+17:16
+small and short high sample here, I'm
+17:18
+already going to decrease the hold and
+17:20
+release times.
+17:36
+[Music]
+17:44
+Now, let's listen to the entire drum
+17:46
+groove with and without the gated
+17:48
+crackle.
+18:13
+The drums are sounding quite dry at the
+18:15
+moment, and since we're aiming for a
+18:17
+dreamy, spacious vibe, adding some
+18:19
+reverb to the snare might not be a bad
+18:21
+idea. I've been using the Sound Toy
+18:23
+Superplay reverb a lot lately. So, I'm
+18:25
+going to add it to the snare using an
+18:27
+audio effect track. As usual, we'll
+18:29
+create a chain for the dry signal and a
+18:31
+chain for the 100% reverb signal.
+18:37
+[Music]
+18:43
+Before we dive into gating, I'll clean
+18:45
+up the reverb with some subtle EQing.
+18:47
+There's often some muddiness to be found
+18:49
+around 200 hertz, so I'll cut a bit
+18:51
+there. And dipping a few dBs in the 1k
+18:54
+to 5k range can help smooth things out a
+18:56
+bit. Especially when working with
+18:58
+vocals, removing some of the harshness
+19:00
+in the reverb can make a big difference
+19:02
+as it creates space for the vocal to cut
+19:04
+through the mix.
+19:09
+without EQ
+19:12
+and with EQ
+19:16
+a lot smoother. By adding a gate right
+19:19
+before the reverb and tweaking the
+19:21
+settings until we're left with just a
+19:23
+short sharp click, we can dramatically
+19:25
+alter the character of the decay.
+19:28
+[Music]
+19:34
+You really want to push the settings to
+19:35
+the extreme here to get the shortest
+19:37
+click possible.
+19:43
+Let's AB real quick.
+19:49
+If we now modulate the release, the
+19:51
+reverb's character will evolve over
+19:53
+time.
+19:55
+[Music]
+20:04
+I'll add an LFO, map it to the release
+20:06
+time, and play around with the settings.
+20:20
+[Music]
+20:33
+By setting the waveform to random, the
+20:35
+reverb's character will change
+20:37
+unpredictably with each hit, adding a
+20:39
+bit of variation and keeping the sound
+20:41
+dynamic throughout the song.
+20:51
+These small modulations might seem
+20:53
+subtle, but they can really add an
+20:54
+organic human touch to your song. Now,
+20:57
+instead of going for a plate style
+20:59
+reverb, let's try a spring reverb. It's
+21:01
+definitely one of those love it or hate
+21:03
+it effects, but personally, I'm a big
+21:05
+fan. So, let's give it a shot and see
+21:06
+what works here. Normally, I'd reach out
+21:09
+for one of my outboard spring reverbs,
+21:11
+but for the sake of this video, we'll
+21:13
+use Arttoria's spring reverb plugin.
+21:15
+It's super flexible and really captures
+21:17
+that classic spring reverb sound almost
+21:20
+perfectly. I'm going to set the width to
+21:22
+stereo and the blend to 100% reverb as
+21:25
+we're using it on a parallel channel.
+21:29
+[Music]
+21:39
+The shorter the click, the more rubbery
+21:42
+and boinky the spring reverb will sound.
+22:00
+Let's listen to it in context.
+22:03
+[Music]
+22:12
+I'm going to bring the reverb down just
+22:14
+a notch.
+22:20
+[Music]
+22:33
+And there we go. We've added a nice high
+22:35
+crackly texture to the drums and turned
+22:37
+the reverb into something a little more
+22:39
+dynamic and interesting just by using a
+22:41
+gate. Now, by swapping out the position
+Classic 80's gated reverb
+22:44
+of the gate and the reverb and thus
+22:46
+placing the gate after the reverb, we
+22:48
+can easily create that classic 80s snare
+22:51
+sound.
+22:55
+Here's a very disco inspired drum loop
+22:57
+that I put together. I added the lexicon
+23:00
+reverb to the clap that hits on every
+23:02
+second snare and narrow down the reverb
+23:04
+using the utility tools with control. If
+23:06
+I turn on the gate after the reverb, it
+23:08
+will suddenly cut off, creating an
+23:10
+almost claustrophobic effect.
+23:19
+The hold and release parameters will let
+23:21
+you shape the reverb's tail.
+Bursts of reverb
+23:45
+Now, lastly, I want to quickly show you
+23:47
+one more reverb related gating trick
+23:49
+that I use to enhance a chopped up synth
+23:51
+loop in my track Dusty Echoes. Let me
+23:53
+quickly show you.
+23:57
+[Music]
+23:58
+The sound you're hearing is a loop I
+24:00
+recorded on an Eminem 310 organ and then
+24:02
+ran through a chase bliss the delay
+24:05
+pedal.
+24:11
+I added a parallel reverb to the syn
+24:13
+loop and placed the gate before it so
+24:15
+that only the loudest syn hits will
+24:17
+trigger the reverb.
+24:20
+[Music]
+24:28
+This creates a rhythmic reverb effect
+24:30
+instead of a long tail that washes out
+24:32
+the entire loop.
+24:35
+[Music]
+24:47
+All right, enough about reverb. Let's
+24:49
+switch gears and explore how we can use
+24:51
+a gate to creatively layer electronic
+24:53
+drums with an old drum break to add a
+24:55
+gritty vintage character to our groove.
+Glitchy drum fills
+24:58
+For this example, I cooked up a pretty
+25:00
+lights Michael Menard's electro soul
+25:02
+kind of vibe consisting of a halftime
+25:04
+drum loop layered with a guitar, an
+25:06
+asset type sequence that I made using my
+25:08
+modular synth, and a fluttery synth loop
+25:11
+coming from my Moog Matriarch.
+25:13
+[Music]
+25:24
+We've got guitar chords with some echo.
+25:29
+[Music]
+25:32
+a raw synth sequence
+25:38
+and some weird synth plucks.
+25:46
+[Music]
+25:54
+I then brought in a drum rig that I
+25:56
+pitched down to match the tempo of the
+25:58
+project, applied the gate, and routed
+26:00
+the kick to its side chain input.
+26:04
+[Applause]
+26:15
+I duplicated the track and did the same
+26:17
+thing for the snare.
+26:19
+[Applause]
+26:21
+[Music]
+26:21
+[Applause]
+26:26
+I could have combined the kick and snare
+26:28
+gates into a single channel using an
+26:30
+audio effect track just like we did
+26:32
+earlier in this video, but I chose to
+26:34
+separate them here. In a third channel,
+26:37
+I added the same drum brake but at
+26:39
+double tempo, which sounds like this.
+26:51
+By isolating the shuffling parts of the
+26:53
+break that happened in between our kick
+26:55
+and snare and then applying a gate to
+26:57
+focus in on the transients, we can
+27:00
+create a cool glitchy percussive loop.
+27:04
+Do note that we're not using the side
+27:06
+chain input here.
+27:09
+[Music]
+27:10
+[Applause]
+27:12
+[Music]
+27:18
+If we now bring the programmed drums
+27:20
+back in, you'll notice how the gated
+27:21
+break adds a raw organic touch and a
+27:23
+nice shuffly rhythm to the mix.
+27:27
+[Music]
+27:39
+You could also manually chop out the
+27:41
+parts of the brake that align with the
+27:42
+kick and the snare, but using a gate
+27:44
+makes it way more flexible as a gated
+27:47
+brake layer will automatically adjust to
+27:49
+any changes you make in a MIDI pattern
+27:51
+of your kick and your snare.
+27:58
+[Music]
+28:01
+All right, that wraps up this video on
+28:03
+the creative use of gates. If you have
+28:06
+any questions or other gate related
+28:08
+tricks yourself, feel free to share them
+28:10
+in the comments. I'll see you all in the
+28:11
+next video soon. Cheers.

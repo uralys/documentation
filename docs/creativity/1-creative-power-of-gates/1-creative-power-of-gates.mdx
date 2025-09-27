@@ -12,291 +12,112 @@ title: Gates
 
 ## The Creative Power of Gates
 
-import basicControlsImg from './basic-controls.png';
-import introImg from './intro.png';
+import chapter01Img from './chapter-01-introduction.png';
+import chapter02Img from './chapter-02-what-is-a-gate.png';
+
+## Introduction
+
+- `Key idea:` Overview of gates as a creative tool beyond basic noise control; outline of fundamentals followed by applications.
+- `Process / settings:` Explore core controls (`threshold`, `floor`, `attack`, `hold`, `release`) before creative demos; compare with a compressor.
+- `Result:` Sets context for using gates musically.
+- `Notes:` (non précisé).
+
+Start 00:00 → 00:15  {/* e.g., "Start 02:15 → 04:40" or "Start 02:15" */}
+<VideoPlayer videoId="YiNA1gyEDSg" overlay={chapter01Img} timeSec={0} />
+
+## What is a gate?
+
+- `Key idea:` A gate reduces or mutes signal below a `threshold`—the opposite of compression, which reduces levels above the threshold.
+- `Process / settings:` Set `threshold`; choose `floor` (to `-∞` for full cut); tune `attack`, `hold`, `release`; use `look ahead` for fast transients; `flip` to audition what’s removed; `return` (open/close offset) to reduce choppiness.
+- `Result:` Cleaner tracks and controlled ambience; typical uses include silencing breaths/noise in vocals and reducing drum mic bleed.
+- `Notes:` (non précisé).
+
+Start 00:15 → 03:22
+<VideoPlayer videoId="YiNA1gyEDSg" overlay={chapter02Img} timeSec={15} />
+
+## Bouncy pad
+
+- `Key idea:` Side‑chain a gate to rhythmic transients to make a static pad groove.
+- `Process / settings:`
+  - Add two parallel instances of `Sound Toy Crystallizer` (one `+1 oct`, one `+2 oct`) and pan L/R for width.
+  - Insert a gate on the pad; activate side chain; feed a drum break (use `preserve` settings to shorten sustain and emphasize transients).
+  - Adjust `threshold` (controls which hits trigger), lengthen `release` for smoothness, raise `floor` to retain body.
+  - Side‑chain to the kick for pumping; automate `release`; or map an `LFO` to `release` (non‑integer `rate`, fine‑tune `depth`/`offset`).
+  - Rearrange the break to reshape feel; add sustained bass; use a visual EQ check for octave; shift via `MIDI pigeon` device.
+  - Low‑end focus with `Auto Filter` `MS2` type (Corg MS‑20‑inspired) and `drive`; copy the modulated gate and the kick side‑chain compressor to the bass; EQ some bass from the pad if muddy.
+- `Result:` Pad and bass adopt the drum groove with evolving movement and width.
+- `Notes:` Keep LFO adjustments tiny—`depth`/`offset` changes have large impact.
+
+Start 03:22 → 12:06
+<VideoPlayer videoId="YiNA1gyEDSg"  timeSec={202} />
+
+## Stuttering synth
+
+- `Key idea:` Use a programmed side‑chain trigger (e.g., hi‑hats) to create robotic, sequenced gate rhythms.
+- `Process / settings:`
+  - Chords: basic `melt` patch with EQ and chorus; side‑chained to kick. Bass: Ableton `808 Drifter`, ducked by kick.
+  - Gate the chord channel; route hi‑hats into the side chain.
+  - Duplicate hats as a muted `gate trigger`; set gate side‑chain to it; generate a pattern with Live’s MIDI generative tools.
+  - Tweak `steps`, `density`, `pattern` to taste.
+  - Example: choppy bassline in track *home* by gating the bass high‑end to a `1/16` hi‑hat loop.
+  - Consider `Gate Lab` by Audio Modern for presets and stereo options.
+- `Result:` Tight, mechanical stutters that lock to a designed pattern.
+- `Notes:` (non précisé).
+
+Start 12:06 → 15:10
+<VideoPlayer videoId="YiNA1gyEDSg"  timeSec={726} />
+
+## Textured drums
+
+- `Key idea:` Combine gates and reverbs to glue textures to hits and shape evolving ambience.
+- `Process / settings:`
+  - Build a dreamy lo‑fi loop from the `golden` sample pack (for `Zenheiser`) found on `Splice 2`; layer a field recording of crackle for airy top end.
+  - Side‑chain gates from `kick`, then `snare`, then `hi‑hats` to make the crackle follow the groove. Use parallel chains (audio effect track) when using multiple gates; shorten `hold`/`release` for small hat samples.
+  - Add `Sound Toy Superplay` reverb to snare on a parallel channel (dry + `100%` reverb).
+  - Clean the reverb with EQ: cut around `200 Hz`; dip a few dB between `1–5 kHz`.
+  - Place a gate *before* the reverb; push settings for the shortest `click`; modulate `release` with an `LFO` (waveform `random`) for evolving character.
+  - Try `Arttoria's` spring reverb plugin; set `width: stereo`, `blend: 100%`; shorter clicks yield more rubbery/boinky springs.
+- `Result:` Crackly textures locked to hits; dynamic, characterful reverb that varies over time.
+- `Notes:` Don’t stack gates in series when targeting different drum hits—use parallel chains or later gates may never open.
+
+Start 15:10 → 22:43
+<VideoPlayer videoId="YiNA1gyEDSg"  timeSec={910} />
+
+## Classic 80's gated reverb
+
+- `Key idea:` Place a gate *after* reverb to chop the tail for that tight 80s snap.
+- `Process / settings:`
+  - Disco‑inspired loop; add `lexicon` reverb to the clap on every second snare; narrow the reverb using `utility tools with control`.
+  - Engage the gate after reverb; tune `hold` and `release` to sculpt tail shape/length.
+- `Result:` Abrupt, claustrophobic reverb cutoff.
+- `Notes:` (non précisé).
+
+Start 22:43 → 23:45
+<VideoPlayer videoId="YiNA1gyEDSg"  timeSec={1363} />
+
+## Bursts of reverb
+
+- `Key idea:` Gate *before* a parallel reverb so only loud hits trigger short bursts.
+- `Process / settings:`
+  - Source loop recorded on an `Eminem 310` organ and run through a `chase bliss` delay pedal.
+  - Add a parallel reverb to the synth loop; place the gate before it so only the loudest synth hits open the reverb.
+- `Result:` Rhythmic reverb accents instead of a wash over the whole loop.
+- `Notes:` (non précisé).
+
+Start 23:45 → 24:58
+<VideoPlayer videoId="YiNA1gyEDSg" timeSec={1425} />
+
+## Glitchy drum fills
+
+- `Key idea:` Layer a gated break with programmed drums to add gritty, shuffly fills.
+- `Process / settings:`
+  - Vibe: halftime drum loop + guitar, an acid‑type modular sequence, and a fluttery synth loop from a Moog Matriarch.
+  - Bring in a drum break pitched down to project tempo; gate it with kick in the side chain; duplicate and gate another for snare.
+  - Add a third channel with the same break at double tempo; isolate shuffling in‑betweens and gate to focus on transients (no side chain here).
+  - Bring back programmed drums; the gated layer auto‑adapts to MIDI changes (kick/snare) vs manual chopping.
+- `Result:` Organic, glitchy percussive texture that complements the main groove.
+- `Notes:` (non précisé).
+
+Start 24:58
+<VideoPlayer videoId="YiNA1gyEDSg"  timeSec={1498} />
 
-<VideoPlayer videoId="YiNA1gyEDSg" overlay={introImg}/>
-
-### Introduction to the Gate Effect
-
-Today, we’ll explore the gate effect, an often overlooked tool despite its creativity potential. Unlike a compressor that reduces signal above a threshold, a gate lowers or completely cuts out signal below it. Gates are perfect for cleaning up vocal recordings in noisy environments or reducing bleed from instruments like drums.
-
-### Understanding Basic Gate Controls
-
-- The `threshold` sets the volume level for the signal to pass through,
-- while the `floor` defines how low the signal gets when the gate is closed.
-
-Time-based controls include:
-
-- `attack`, which dictates how quickly the gate opens;
-- `hold`, which keeps it open during quiet periods;
-- and `release`, controlling the speed back to floor.
-
-<VideoPlayer videoId="YiNA1gyEDSg" timeSec={95} overlay={basicControlsImg}/>
-
-#### Advanced controls
-
-- `look ahead` introduce a delay for accurate transient detection,
-- `flip` lets you audition gated-out signals,
-- and `return` adjusts threshold sensitivity.
-
-<VideoPlayer videoId="YiNA1gyEDSg" timeSec={172} overlay={basicControlsImg}/>
-
-### Creative Uses of Gates
-
-Gates can enhance vocal recordings by silencing background noise or breaths between phrases. For drums, gates are essential for cutting bleed from cymbals in kick drum mics. Creatively, you can sidechain a gate to add groove to static pad sounds using rhythmic signals like drum breaks. This involves selecting the signal with transients (e.g., drum hits) as the sidechain and adjusting controls to align the grooves.
-
-### Sidechaining Techniques for Groove
-
-Using gates with the sidechain input allows pads to move in rhythm, mimicking the groove of trigger signals like drum breaks. By manipulating settings such as threshold and release time, you can control which transients are triggered and adjust the gate’s smoothness. Automating these controls or using LFOs adds dynamic modulation for a unique sound.
-
-### Enhancing Drum Grooves with Gates
-
-Gates add an organic touch to drum grooves by enhancing certain sounds like snares and hi-hats through gating. A good practice is stacking gates in parallel, not series, on the same channel to maintain flexibility. For example, placing a gate before reverb on drums can create a short sharp click that changes over time or adds dynamic variation.
-
-### Creative Layering and Sound Design
-
-Gates can also layer electronic drums with old drum breaks for a gritty vintage effect. By isolating the transients of the break using gates, you add a raw organic touch to the mix without needing manual chopping. This method ensures flexibility as gate settings automatically adjust to changes in MIDI patterns, enhancing both rhythm and sound character.
-
-### Key points
-
-#### 1. What is a gate effect, and how does it work in relation to other dynamic processors like compressors?
-
-*A gate effect works by reducing or completely silencing a signal when its volume falls below a set threshold level. Unlike a compressor, which reduces excessive loudness, a gate cuts out quiet sounds, effectively allowing only those signals that exceed the threshold to pass through.**
-
-In practical terms:
-- **Compressor:** Reduces loudness (volume) of louder signals.
-- **Gate:** Cuts off quieter signals or completely silences them.
-
-**Key Use Case:**
-Gates are particularly useful in cleaning up noise between vocal phrases or reducing unwanted bleed from drum mics, like cymbal bleed into a kick microphone. This makes gates essential for maintaining clarity and focus on the desired signal (e.g., vocals or drums) amidst background noises.
-
----
-
-#### 2. How can gates be used creatively in music production, particularly with vocals and drum recordings?
-
-**Gates are versatile tools that extend beyond basic noise reduction to enhance creativity through selective audio shaping.**
-
-**Vocals:**
-- **Noise Reduction:** Gates silence unwanted ambient noises like street sounds or air conditioning in vocal recordings.
-- **Breath Control:** Gates can eliminate breaths between phrases, making vocals cleaner and more focused.
-
-**Drum Recordings:**
-- **Bleed Reduction:** Gates are used to isolate individual drums by gating out the bleed of one drum from another mic. For example:
-  - Cymbals in kick drum mics.
-  - Snares in a snare mic.
-
-**Creative Applications:**
-Gates can also be used in rhythmically triggered ways, creating movement and groove through sidechain routing. This is especially useful for adding dynamic elements like drums or hi-hats to non-drum channels such as pads or synth loops.
-
----
-
-#### 3. What are the key controls of a gate effect, and how do they influence its behavior?
-
-**The main controls of a gate include:**
-- **Threshold:** Determines when the signal passes through.
-- **Floor Level:** Sets the minimum volume for the signal to pass; below this level, the signal is silenced (or reduced).
-- **Attack Time:** Controls how quickly the gate opens once the signal exceeds the threshold.
-- **Hold Time:** Keeps the gate open after the signal falls back below the threshold.
-- **Release Time:** Determines how long it takes for the gate to return to its resting state.
-
-**How These Control the Gate:**
-- A lower threshold makes the gate less sensitive, capturing more of the signal.
-- A higher floor level keeps the signal quieter when gated.
-- A short attack time quickly opens the gate once a signal exceeds the threshold.
-- A longer hold time allows for sustained gating, giving it more expressive potential.
-- A longer release time keeps the gate open longer, reducing abrupt cutoffs.
-
----
-
-#### 4. What is the role of sidechain input in gating techniques, and how does it enhance groove and movement in sounds?
-
-**Sidechain inputs allow a signal (such as drums or hi-hats) to control another channel's gate via its transients.**
-
-**How Sidechain Works:**
-- The sidechain signal triggers the gate based on its transients; when the transient crosses the threshold, the gate opens.
-
-**Use Case for Groove:**
-By sending a drum break into the sidechain input of a pad or synth, you can create rhythmic movement and excitement. This is achieved by tweaking parameters like:
-- **Threshold:** Adjusts which parts of the transients are used to trigger the gate.
-- **Release Time:** Controls how smooth the sound feels when the gate closes.
-- **Floor Level:** Adds body back into the gated signal.
-
-**Example:**
-Using a drum break as the sidechain input for a static pad makes it play in rhythm, giving it more movement and excitement. The movement can be dynamic by automating parameters like the release time or LFO'ing (modulating) them to create evolving grooves.
-
----
-
-#### 5. How can gates be combined with other effects (like reverb) to create unique textures and dynamics in music production?
-
-**Combining gates with reverb allows for creating short, sharp decays rather than long, sustained reverbs, adding a dynamic and organic quality:**
-
-1. **Gate Before Reverb:**
-   - The gate cuts off the signal early before it reaches the reverb.
-   - Example: Produces a "snap" sound like a drum hit, making the decay sharp and focused.
-
-2. **/Gate After Reverb:**
-   - The gate is placed after the reverb.
-   - Example: This creates the classic 80s snare sound or clapping echo effect by cutting off the reverb tail to create a short, crisp sound.
-
-**Additional Uses:**
-- **Lo-Fi and Dreamy Effects:** Gates can shorten the decay of field recordings (like crackles) or drum hits in lo-fi grooves.
-- **Rhythmic Reverb:** Using gates with hi-hats or drum breaks for sidechain inputs on reverbs can create rhythmic reverb effects that don't wash out the entire loop.
-
-**Example:**
-- A gated and reverb-treated snare groove creates a dynamic, organic feel rather than the usual smoothness of a sustained reverb tail.
-
-
-# From chatgtp - Gate — Structured Guide & Key Points
-
----
-
-## 1. Gate is a creative device
-- The **Gate** isn’t just utility—it’s a **creative device**.
-- By shaping **when** and **how long** audio passes, you add **groove**, **clarity**, and **variation**—often better than piling on extra plugins.
-- With **sidechain**, Gate becomes a **dynamics sequencer**.
-[▶ Watch this part](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
----
-
-## 2. Gate Refresher
-- **Threshold** — level that opens the gate.
-- **Attack** — time to reach full level after opening (punch vs. smooth).
-- **Hold** — minimum open time (stabilizes rhythm).
-- **Release** — time to close (short = choppy, long = legato).
-- **Floor** — level while “closed” (not always silence).
-**Tip:** Set **Threshold** in context of the full mix, not solo.
-[▶ Watch this part](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
----
-
-## 3. Creative Techniques
-
-### 3.1 Sidechain Gating (rhythmic pads/ambiences)
-**Goal:** Make pads/ambiences “breathe” with a drum element (HH, rim, MIDI pattern).
-**Keys:**
-- Clean, steady **sidechain source** for crisp patterns.
-- **Short Attack**, **Hold** at musical value (e.g., 1/16–1/8), **Release** for swing.
-- Raise **Floor** a bit to keep a low “bed” between openings.
-[▶ Watch this part](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
-### 3.2 Gated Reverb (tight snares/percussion)
-**Goal:** Punch without washing the mix.
-**Keys:**
-- Reverb on a return or duplicate, then **Gate after Reverb**.
-- **Short Hold**, **Release** tempo-matched to chop tails neatly.
-- Great on **snares**, **toms**, **claps**.
-[▶ Watch this part](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
-### 3.3 Creative Cleanup (bleed/noise without killing groove)
-**Goal:** Smarter mic cleanup (rooms, OH, toms) while keeping vibe.
-**Keys:**
-- **Threshold** just above noise/bleed.
-- Slightly longer **Hold** to preserve **rhythmic cohesion**.
-- **Floor** > −∞ dB to keep subtle room between hits.
-[▶ Watch this part](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
-### 3.4 Transitions & Movement (stutter/call-and-response)
-**Goal:** Musical chops, builds, and responses.
-**Keys:**
-- Automate **Threshold/Hold/Release** over 1–2 bars.
-- Trigger with a **ghost clip** (dedicated sidechain track) for precise motifs.
-- Move **Floor** to shift from hard cuts to “half-open” textures.
-[▶ Watch this part](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
----
-
-## 4. Step-by-Step Workflows
-
-### A) Rhythmic pad via sidechain
-1. Insert **Gate** on the **pad**.
-2. Enable **Sidechain**, choose **hi-hat** (or a click/MIDI driver).
-3. Lower **Threshold** until the pad opens **only** on the triggers.
-4. **Attack** 1–5 ms, **Hold** ≈ 1/16–1/8, **Release** to taste for groove.
-5. **Floor** around −12 to −18 dB to keep a bit of air.
-[▶ Watch this workflow](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
-### B) Tight gated reverb on snare
-1. Duplicate snare ➜ **Reverb** channel.
-2. Place **Gate after Reverb**.
-3. Set **Threshold** to open on hits, **Hold** short, **Release** tempo-matched.
-4. Blend Wet/Dry for **impact without smear**.
-[▶ Watch this workflow](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
-### C) “Smart room” on drums
-1. Gate on **Room** track.
-2. **Threshold** above noise; **Floor** ≈ −10 to −20 dB (not full mute).
-3. **Hold** medium, **Release** musical.
-4. A/B with bypass to keep the room alive.
-[▶ Watch this workflow](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
----
-
-## 5. Quick Presets
-
-```txt
-[PADS — Sidechain Pulse]
-Attack: 2 ms
-Hold: 90–140 ms (tempo-dependent)
-Release: 120–220 ms
-Threshold: just to open on triggers
-Floor: −12 dB
-```
-
-```txt
-[SNARE — Gated Reverb Tight]
-Attack: 1–3 ms
-Hold: 50–90 ms
-Release: 120–180 ms (tempo-matched)
-Threshold: just above reverb level
-Floor: −∞ to −24 dB (cleanliness)
-```
-
-```txt
-[ROOM — Keep the Air]
-Attack: 5–10 ms
-Hold: 120–200 ms
-Release: 200–300 ms
-Threshold: above ambient noise
-Floor: −15 dB (leave ambience)
-```
-
-```txt
-[STUTTER — Transition Bar]
-Automate: Threshold rising over 1 bar
-Attack: 1 ms
-Hold: 40–70 ms
-Release: 60–120 ms
-Floor: −∞ (hard cuts)
-Sidechain: 1/16 ghost clip
-```
-
-[▶ Hear examples in the video](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
----
-
-## 6. Common Pitfalls & Fixes
-- **Over-silencing (sterile mix)** ➜ Raise **Floor** (−18/−12 dB) or lengthen **Release**.
-- **Lost transients** ➜ **Attack** too long; shorten to 1–3 ms.
-- **Inconsistent pumping** ➜ Unstable sidechain; use a **ghost clip**.
-- **Clicks at close** ➜ Lengthen **Release** and/or ease **Threshold**.
-- **Groove disappears** ➜ Increase **Hold** for continuity.
-[▶ Troubleshooting moments](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
-
----
-
-## 7. Mini Glossary
-- **Sidechain:** Use another track as the gate’s trigger.
-- **Ghost track:** Silent driver track used for clean, consistent sidechain.
-- **Floor:** Output level while “closed” (≠ full mute).
-- **Stutter:** Deliberate rhythmic chopping effect.
-
----
-
-## 8. Usage Checklist
-- [ ] Pick **target** track and **sidechain source**.
-- [ ] Match **Attack/Hold/Release** to **tempo** and **style**.
-- [ ] Set **Floor** to balance hard cuts vs. living ambience.
-- [ ] Automate **Threshold/Release** for transitions.
-- [ ] **A/B** with bypass to confirm musicality.
-[▶ Wrap-up / recap](https://www.youtube.com/watch?v=YiNA1gyEDSg&t=XXXs)
