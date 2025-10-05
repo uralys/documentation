@@ -41,3 +41,8 @@
     border-radius: 50%;
   }
 }
+
+/* Cartes pour la preview d’un dossier */
+.card p {
+  white-space: wrap;
+}

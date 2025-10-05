@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://documentation.uralys.com',
+  url: 'https://docs.uralys.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -59,7 +59,7 @@ const config: Config = {
       title: 'Uralys Documentation',
       logo: {
         alt: 'Uralys Logo',
-        src: 'img/logo.svg'
+        src: 'img/logo.png'
       },
       items: [
         {

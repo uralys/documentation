@@ -15,7 +15,7 @@ const $Playbutton = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -65%);
   font-size: 80px;
   line-height: 80px;
   color: white;
@@ -96,7 +96,7 @@ const VideoPlayer = ({
           <$Iframe
             width="100%"
             height="500"
-            src={`https://youtube.com/embed/${videoId}?start=${timeSec}&autoplay=1`}
+            src={`https://youtube.com/embed/${videoId}?start=${timeSec}&autoplay=${playing ? 1 : 0}`}
             allow="autoplay; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
