@@ -1,0 +1,146 @@
+---
+sidebar_position: 1
+slug: /mixing/ableton-stock-devices
+---
+
+# Few Ableton Stock Devices
+
+<i>
+"After years of getting more and more plugins I finally figured out those two things:
+1. Truly unique plugins are RARE. New plugins are to solve yet another "major problem", but the truth is that there's already a tool that takes care of that.
+2. ...thats why if you just want to get things done and have fun with producing - USE STOCK PLUGINS. Sure, they won't replace that "analog character" but just like with third party plugins - stock Ableton devices are getting better and better"
+</i>
+
+*Credit: [@Zdrewe](https://www.youtube.com/@Zdrewe) on YouTube*
+
+import intro from './intro.png';
+import cuttingFrequencies from './cutting-frequencies.png';
+import subBoom from './sub-boom.png';
+import compressor from './compressor.png';
+import roar from './roar.png';
+import clipper from './clipper.png';
+import glueCompressor from './glue-compressor.png';
+import hybridReverb from './hybrid-reverb.png';
+
+## Intro
+
+- `Key idea:` Ableton stock devices can replace most third-party plugins for mixing and sound design tasks.
+- `Process / settings:` Use built-in devices like Envelope Follower, Saturator, Glue Compressor, Hybrid Reverb, and Roar instead of expensive plugins.
+- `Result:` Professional mixing results without additional plugin investments.
+- `Notes:` Requires Ableton Live 12 for Roar device.
+
+*00:00 → 00:35*
+<VideoPlayer videoId="LNkmHsP_Z1o" overlay={intro} timeSec={0} />
+
+## Cutting Frequencies - Sidechain with Envelope Follower
+
+- `Key idea:` Create dynamic frequency ducking on bass using Envelope Follower instead of purchasing sidechain plugins like Trackspacer or Fuser.
+- `Process / settings:`
+  - Place Envelope Follower on kick track
+  - Identify clashing frequencies using spectrum analyzer (in example: `74 Hz` kick peak)
+  - Add EQ8 band at the clashing frequency on bass channel
+  - Map Envelope Follower to EQ gain via modulation (M button)
+  - Set modulation range from `50%` (flat) to `0` (full cut)
+  - Adjust Q factor and bandwidth to taste
+- `Result:` Bass automatically ducks at kick frequencies when kick hits, maintaining low-end clarity without permanent frequency cuts.
+- `Notes:` Superior to regular sidechain compression which can lose low-end. Alternative: use standard sidechain compression if dynamic EQ is too complex.
+
+*00:35 → 02:02*
+<VideoPlayer videoId="LNkmHsP_Z1o" overlay={cuttingFrequencies} timeSec={35} />
+
+## Sub Boom - Bass Enhancement
+
+- `Key idea:` Use Ableton's built-in Sub Boom device instead of third-party sub enhancers like RBass.
+- `Process / settings:`
+  - Add Sub Boom device to bass channel
+  - Adjust dry/wet knob to control effect amount
+  - Tune to song key (example: `G#`)
+  - Control tone brightness parameter
+  - Adjust pitch/size parameter for sub frequency range
+  - Modify decay time of the sub tail
+- `Result:` Enhanced sub-bass presence with tonal control and proper key tuning.
+- `Notes:` Sub Boom offers brightness, pitch, and decay controls for precise sub shaping.
+
+*02:02 → 02:59*
+<VideoPlayer videoId="LNkmHsP_Z1o" overlay={subBoom} timeSec={122} />
+
+## Compressor - Parallel Compression Technique
+
+- `Key idea:` Ableton's Glue Compressor excels at parallel compression with proper attack control for drum processing.
+- `Process / settings:`
+  - Use basic compressor for standard compression tasks
+  - Use Glue Compressor specifically for parallel drum compression
+  - Control transient response via attack knob
+  - Slower attack preserves more transients
+  - Faster attack removes transients
+  - Avoid blindly slamming threshold to maximum
+- `Result:` Controlled, punchy drums with preserved or shaped transients depending on attack setting.
+- `Notes:` Attack time is the key parameter for controlling drum character in parallel compression. Don't just slam threshold and hope for good results.
+
+*02:59 → 04:06*
+<VideoPlayer videoId="LNkmHsP_Z1o" overlay={compressor} timeSec={179} />
+
+## Roar - Multiband Waveshaping
+
+- `Key idea:` Roar is Ableton Live 12's built-in multiband waveshaper, replacing expensive saturation plugins like Saturn.
+- `Process / settings:`
+  - Access via stock Ableton preset called "Ott" (don't use third-party Ott plugin)
+  - Choose from multiple waveshaper algorithms (example: Fractal, Style Clipper, Soft Sign)
+  - Enable multiband mode with three bands: low, mid, high
+  - Apply different shapers to each band independently
+  - Two crossover points for band separation
+  - Access modulation via mod sources: `2 LFOs`, `envelope follower`, `noise modulator`
+  - Modulate parameters via modulation matrix
+- `Result:` Complex harmonic shaping with independent frequency band processing and dynamic modulation capabilities.
+- `Notes:` Exclusive to Live 12. Crossover flexibility is limited to two points. Full modulation matrix available for creative sound design. Alternative to spending `$130` on saturation plugins.
+
+*04:06 → 05:43*
+<VideoPlayer videoId="LNkmHsP_Z1o" overlay={roar} timeSec={246} />
+
+## Clipper - Saturator as Soft Clipper
+
+- `Key idea:` Use Saturator with soft clip engaged as a clipper for transient shaping and loudness.
+- `Process / settings:`
+  - Add Saturator device
+  - Enable soft clip button
+  - Drive the input signal
+  - Use gain matching via Utility before or makeup gain after
+  - Monitor output meter for clipping indication (example: kick peaking at `-6 dB`)
+  - Watch waveform shape change during clipping
+- `Result:` Controlled soft clipping that shapes transients and increases perceived loudness without harsh distortion.
+- `Notes:` Saturator can lean more toward saturation character. For pure clipping, Glue Compressor method may be preferable.
+
+*05:43 → 06:22*
+<VideoPlayer videoId="LNkmHsP_Z1o" overlay={clipper} timeSec={343} />
+
+## Glue Compressor - Alternative Soft Clipper
+
+- `Key idea:` Glue Compressor can function as a transparent soft clipper when compression is disabled.
+- `Process / settings:`
+  - Add Glue Compressor
+  - Turn range knob down (disables compression)
+  - Enable soft clip button
+  - Drive signal using Utility before compressor OR use makeup gain on compressor
+  - Use Utility after for gain matching
+  - Monitor clipping indicator
+- `Result:` Transparent soft clipping with minimal coloration, focusing on transient control and loudness.
+- `Notes:` Cleaner clipping alternative to Saturator method. Watch transient shape changes during clipping.
+
+*06:22 → 07:00*
+<VideoPlayer videoId="LNkmHsP_Z1o" overlay={glueCompressor} timeSec={382} />
+
+## Hybrid Reverb - Creative Reverb Design
+
+- `Key idea:` Hybrid Reverb combines convolution and algorithmic reverb, allowing custom impulse responses from any audio file.
+- `Process / settings:`
+  - Load any audio file (example: snare sample) as impulse response in convolution section
+  - Adjust blend knob to control convolution vs. algorithmic balance
+  - Use size parameter to change pitch of reverb tail
+  - Mix in algorithmic reverb section for additional character
+  - Create automation curves for reverb parameters (example: reverb throws)
+  - Copy and adjust automation points for varied effects
+- `Result:` Unique reverb textures impossible with standard reverbs, with dynamic automation for creative effects.
+- `Notes:` More unique sounds than commonly-used Valhalla reverbs. Can use any WAV file as impulse response. Supports complex automation curves beyond basic reverb throws.
+
+*07:00 → 08:41*
+<VideoPlayer videoId="LNkmHsP_Z1o" overlay={hybridReverb} timeSec={420} />
