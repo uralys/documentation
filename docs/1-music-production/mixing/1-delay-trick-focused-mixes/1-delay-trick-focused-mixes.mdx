@@ -1,0 +1,82 @@
+---
+sidebar_position: 1
+slug: /mixing/delay-trick-focused-mixes
+---
+
+# The Delay Trick for Focused Mixes
+
+<i>In this video we're looking at a simple, but very effective technique to keep your delays or reverbs from cluttering your mix.</i>
+
+***Credit: [@Poldoore](https://www.youtube.com/@Poldoore)***
+
+import introduction from './introduction.png';
+import theTrick from './the-trick.png';
+import processingTheDelay from './processing-the-delay.png';
+import otherDelays from './other-delays.png';
+import moreApplications from './more-applications.png';
+
+## Introduction
+
+- `Key idea:` A mixing trick to open up space in the mix and help instruments breathe and groove by preventing delays from muddying the dry signal.
+- `Process / settings:` Demonstrated using a saxophone line from the album Chroma Dream with SoundToys Echo Boy delay plugin.
+- `Result:` The delay fills in tiny gaps between notes without overshadowing the performance.
+- `Notes:` This technique was used heavily in the album Chroma Dream.
+
+*00:00 → 00:15*
+<VideoPlayer videoId="NnlODljI5FE" overlay={introduction} timeSec={0} />
+
+## The Trick
+
+- `Key idea:` Use sidechain compression to duck the delay signal when the dry instrument is playing, allowing the delay to fill only the gaps between notes.
+- `Process / settings:`
+  - Group the delay effect into an audio effect track to use it in parallel
+  - Set the delay to `100% wet` (like a return track)
+  - Create a new chain for the dry unaffected signal
+  - Add a compressor to the delay chain, enable sidechain
+  - Select the source track as input and choose the dry chain (prefix/post-effects/post-mixer options available)
+  - Adjust `threshold` to control how much delay is heard while the instrument plays
+  - Adjust `release` to determine how quickly the delay comes back between notes
+- `Result:` The dry signal causes the delay to duck out whenever a note is playing, preventing the delay from muddying the dry recording.
+- `Notes:` Setting the release fairly fast avoids creating a noticeable pumping effect on the echo. Prefix sends raw unprocessed audio, post-effects includes effects, post-mixer includes volume/panning/returns.
+
+*00:15 → 03:13*
+<VideoPlayer videoId="NnlODljI5FE" overlay={theTrick} timeSec={15} />
+
+## Processing the Delay
+
+- `Key idea:` Apply additional processing to the wet delay signal independently from the dry signal.
+- `Process / settings:`
+  - Use an EQ to shape the tone of the delay
+  - Add subtle vibrato to the delay for a broken tape delay vibe
+  - Use a tuner to ensure the vibrato doesn't drift too far out of tune
+- `Result:` The delay no longer clouds the melody and the vibrato adds a subtle vintage character to the sound.
+- `Notes:` Audio effect tracks allow processing effects specifically on the wet signal.
+
+*03:13 → 04:25*
+<VideoPlayer videoId="NnlODljI5FE" overlay={processingTheDelay} timeSec={193} />
+
+## Other Delays
+
+- `Key idea:` Some delay plugins include built-in ducking features that achieve the same result without manual sidechain setup.
+- `Process / settings:`
+  - FabFilter Timeless includes advanced ducking features
+  - Ableton Live's stock Echo effect also has ducking built-in
+  - Set parameters to similar values as the manual sidechain setup
+  - Gradually lower the threshold to find the right level while the track plays
+- `Result:` Achieves the same ducking effect with less manual routing.
+- `Notes:` Using built-in ducking can be faster and more convenient than manual sidechain compression.
+
+*04:25 → 05:12*
+<VideoPlayer videoId="NnlODljI5FE" overlay={otherDelays} timeSec={265} />
+
+## More Applications
+
+- `Key idea:` This sidechain technique works well on other sources beyond instrumental melodies.
+- `Process / settings:`
+  - Sidechain delay on rap vocals to keep clarity
+  - Sidechain reverb on synth bass to maintain punch and clarity
+- `Result:` Delays and reverbs stay out of the way of the main signal, maintaining focus in the mix.
+- `Notes:` The technique can be applied to any source where space effects might cloud the main sound. Effects shown were slightly exaggerated for demonstration purposes.
+
+*05:12*
+<VideoPlayer videoId="NnlODljI5FE" overlay={moreApplications} timeSec={312} />
