@@ -85,11 +85,23 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Quick Links',
           items: [
             {
-              label: 'plop',
-              to: '/'
+              label: 'Creativity',
+              to: '/category/creativity'
+            },
+            {
+              label: 'Mixing',
+              to: '/category/mixing'
+              // },
+              // {
+              //   label: 'Mastering',
+              //   to: '/category/mastering'
+            },
+            {
+              label: 'Credits',
+              to: '/#references-and-teachers'
             }
           ]
         },
@@ -97,12 +109,25 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'uralys.com',
+              label: 'www.uralys.com',
               href: 'https://uralys.com'
+            },
+            {
+              label: 'Spotify',
+              href: 'https://open.spotify.com/artist/1lRNAaGXQBBXR6MWs0pEVp'
             },
             {
               label: 'GitHub',
               href: 'https://github.com/uralys'
+            }
+          ]
+        },
+        {
+          title: 'Contact',
+          items: [
+            {
+              label: 'hello@uralys.com',
+              href: 'mailto:hello@uralys.com?subject=Hello%20from%20Documentation'
             }
           ]
         }

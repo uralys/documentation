@@ -1,0 +1,143 @@
+---
+sidebar_position: 1
+slug: ultimate-mixing-guide
+---
+
+# You Suck at Mixing: The Ultimate Guide
+
+<i>In today's lesson, I'll walk you through the mixing process from start to finish using my new song, Get Too Close.</i>
+
+***Credit: [@You Suck at Producing](https://www.youtube.com/@yousuckatproducing)***
+
+import intro from './intro.png';
+import premixPrep from './premix-prep.png';
+import exportingStems from './exporting-stems.png';
+import importingStems from './importing-stems.png';
+import levels from './levels.png';
+import sidechain from './sidechain.png';
+import referenceTracks from './reference-tracks.png';
+import drumMixing from './drum-mixing.png';
+import measuringSub from './measuring-sub.png';
+import vocals from './vocals.png';
+import mastering from './mastering.png';
+import finalExport from './final-export.png';
+
+## Intro
+
+- `Key idea:` Mixing is the process of blending all sounds together to present your song in the best possible light, but it cannot fix a poorly composed song.
+- `Process / settings:` Ensure composition, arrangement, and sound design are complete before starting the mix. Choose between mixing in the production project or exporting stems to a new project for a cleaner workflow.
+- `Result:` Committing to stems forces you to stop tweaking and focus on the mix itself.
+- `Notes:` Ableton Live used throughout this tutorial.
+
+*00:00 → 01:29*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={intro} timeSec={0} />
+
+## Premix Prep
+
+- `Key idea:` Organize and prepare the production project before exporting stems.
+- `Process / settings:` Save as "premix" version, rename tracks, delete muted/unused tracks, ungroup drum racks. Consolidate drum MIDI with `Command/Control + J`, remove deactivated notes, extract chains individually from drum rack using `List > Right-click > Extract Chains`.
+- `Result:` Clean, organized project ready for stem export with each drum sound on its own track.
+- `Notes:` Ableton's drum rack extract feature doesn't support batch processing - must extract chains one by one.
+
+*01:29 → 03:02*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={premixPrep} timeSec={89} />
+
+## Exporting Stems
+
+- `Key idea:` Export all tracks as individual audio files with normalized levels.
+- `Process / settings:` `File > Export Audio/Video`, set to "All Individual Tracks", verify render start/length, turn off "Include Return and Main Effects", enable `Normalize` for maximum waveform clarity. Set sample rate to `48kHz` or `44.1kHz`, `Encode PCM` on, `16-bit` or higher (`24`/`32` for more quality), `Dither` off.
+- `Result:` Clean audio stems with visible waveforms, though relative volumes are reset requiring fresh leveling in mix session.
+- `Notes:` Normalize makes seeing clicks, pops, and cracks easier by maximizing waveform size without clipping.
+
+*03:02 → 04:27*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={exportingStems} timeSec={182} />
+
+## Importing Stems
+
+- `Key idea:` Import stems into fresh Ableton project without warping.
+- `Process / settings:` In Ableton settings, ensure "Auto Warp Long Samples" is off. Set master BPM to project tempo (`150 BPM`). Select all stems, drag into Ableton while holding `Command` (Mac) or `Control` (PC) to give each stem its own track.
+- `Result:` All stems properly imported at correct tempo without time stretching artifacts.
+- `Notes:` Color code tracks by group (magenta for synths, pink for risers/effects, blue for bass, orange for drums, red for vocals).
+
+*04:27 → 05:47*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={importingStems} timeSec={267} />
+
+## Levels
+
+- `Key idea:` Build mix from scratch by bringing in tracks one by one in order of importance.
+- `Process / settings:` Select all tracks with `Command/Control + A`, bring volumes to `-∞ dB`. Start with kick at approximately `-12 dB`, then add clap, hi-hats, rides, tambourines, and other elements. Work through multiple sections of the song to ensure consistent levels.
+- `Result:` Balanced foundational mix with proper hierarchy based on element importance.
+- `Notes:` Trust your gut when setting levels - there's no exact dB value for each element.
+
+*05:47 → 06:37*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={levels} timeSec={347} />
+
+## Sidechain
+
+- `Key idea:` Make kick punch through the mix by ducking other elements.
+- `Process / settings:` Use Duck Buddy (free Max for Live device) which uses MIDI triggers rather than audio input. Import kick MIDI from original project (`Current Project > premix project`), place at top as "sidechain input". Group everything except drums into "not drums" group, apply Duck Buddy with kick MIDI as input.
+- `Result:` Clean volume ducking that creates punch for the kick without audio-based compression artifacts.
+- `Notes:` Duck Buddy uses pre-made volume curve triggered by MIDI notes, different from traditional sidechain compression.
+
+*06:37 → 08:10*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={sidechain} timeSec={397} />
+
+## Reference Tracks
+
+- `Key idea:` Use reference tracks at matched loudness to identify mix issues.
+- `Process / settings:` Import 3 reference tracks, add loudness meter to master. Measure mix at integrated loudness (approximately `-10 LUFS`). Play each reference and adjust their track volumes until they also hit `-10 LUFS`. Compare mix to references to identify differences.
+- `Result:` Identified that drums need more punch (especially kick) and overall mix needs more brightness/high-end.
+- `Notes:` Use integrated LUFS measurement for accurate loudness matching, not peak meters.
+
+*08:10 → 10:21*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={referenceTracks} timeSec={490} />
+
+## Drum Mixing
+
+- `Key idea:` Glue drums together and control peaks using multiband compression and saturation.
+- `Process / settings:` Increase kick by `3-4 dB`, add multiband compressor to drum group with output reduced to match perceived loudness. Adjust individual bands (bring kick up to orange reference, let high-end taming, boost rim slightly). Add saturator set to "Digital Clip" mode with drive and output as opposites (no volume increase, just crunch). Clean up low-end on hi-hats and other drums using EQ8 with steeper curve (`X4`).
+- `Result:` Punchy, glued drum group with controlled peaks and clean low-end allowing more headroom for mastering.
+- `Notes:` Saturator reduces peak jumps while adding subtle crunch; cutting unnecessary low-end from non-bass elements is a favorite mixing technique.
+
+*10:21 → 13:10*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={drumMixing} timeSec={621} />
+
+## Measuring Sub
+
+- `Key idea:` Use spectrum analyzer to visualize and balance sub frequencies.
+- `Process / settings:` Add spectrum to master track, disable auto-resize by clicking "Auto" while playing, zoom to low-end with blue sliders. Check sub level against references (target around `-6 dB` at fundamental frequency). Balance different bass sounds (car start bass vs. glon) to maintain consistent sub presence.
+- `Result:` Consistent, appropriate sub level matching the genre and reference tracks.
+- `Notes:` Spectrum shows frequency, loudness, and note when hovering - crucial for checking sub consistency between different bass sounds.
+
+*13:10 → 14:54*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={measuringSub} timeSec={790} />
+
+## Vocals
+
+- `Key idea:` Process vocals with gate, EQ, pitch correction, compression, and effects.
+- `Process / settings:` Gate to cut quiet parts, EQ to remove low-end, Auto Shift for pitch correction with automated formant for pitch up/down effect. TDR Kotelnikov (free LA2A emulation) for initial compression, Ableton Compressor (default settings) for additional control, OTT for heavy squashing. Valhalla Shimmer with automation for buildups, Shifter for pitched-up doubles, automated Echo.
+- `Result:` Polished, present vocals with creative pitch effects and spatial depth.
+- `Notes:` Re-imported and re-processed original vocal stems with cleaner editing for this mix.
+
+*14:54 → 16:17*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={vocals} timeSec={894} />
+
+## Mastering
+
+- `Key idea:` Make the track as loud as commercial releases in the genre.
+- `Process / settings:` Use NewFangled Saturate plugin, set clipper shape to "Hard", turn off "Auto" gain match to hear actual loudness increase. Push drive to approximately `6` before distortion becomes obvious. Route reference tracks to "External Out" to bypass master effects and compare loudness accurately.
+- `Result:` Competitive loudness matching reference tracks without excessive distortion.
+- `Notes:` Can use limiter for clean approach or saturator for dirty approach; Saturate offers "cleanest dirty" route with smart clipping.
+
+*16:17 → 18:07*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={mastering} timeSec={977} />
+
+## Final Export
+
+- `Key idea:` Export master with proper settings for distribution.
+- `Process / settings:` `File > Export Audio/Video`, set bit depth to `24-bit`, sample rate to `48kHz` or `44.1kHz` (match listening system), enable dither (adds quiet white noise to cover digital artifacts). Name file appropriately.
+- `Result:` Professional master ready for distribution.
+- `Notes:` Dither is essential when reducing bit depth to prevent digital artifacts.
+
+*18:07 → 18:56*
+<VideoPlayer videoId="YSR6P2G5GvY" overlay={finalExport} timeSec={1087} />
