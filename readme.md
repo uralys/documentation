@@ -1,4 +1,11 @@
-# Uralys Documentation
+# DEPRECATED
+
+This project finished as the starting point of bookyube.com <3
+Uralys documentation is now https://bookyube.com/uralys/en/
+
+---
+
+## Uralys Documentation
 
 I've found many great channels and artists on youtube along my journey to learn music production, sound design, mixing and mastering.
 
